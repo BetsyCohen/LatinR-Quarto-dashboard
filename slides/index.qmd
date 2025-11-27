@@ -2,7 +2,7 @@
 title: "Tableros con Quarto Dashboards y Crosswalk"
 author:
   - name: "Betsy Cohen"
-  affiliations: 
+    affiliations: 
     - name: "Núcleo de Innovación Social"
     - name: "RLadies Buenos Aires"
 date: "2024-12-01"
