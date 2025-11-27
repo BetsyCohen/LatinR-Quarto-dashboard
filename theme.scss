@@ -3,52 +3,47 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fira+Mono&family=Domine:wght@400;700;900&family=Nunito:wght@400;900&display=swap');
 
-// Colors
+// -----------------------
+// Colores LatinR-ish
+// -----------------------
 
-// Most colors adopted from https://palx.jxnblk.com/
-// with base color #0b7366
+// Neutros
+$white:        #ffffff;
+$gray-0:       #f4f4f4;
+$gray-1:       #e8e8e8;
+$gray-2:       #dcdcdc;
+$gray-3:       #cccccc;
+$gray-4:       #b8b8b8;
+$gray-5:       #a3a3a3;
+$gray-6:       #8e8e8e;
+$gray-7:       #777777;
+$gray-8:       #555555;
+$gray-9:       #333333;
+$black:        #000000;
 
-$white:  #fff;
-$gray-0: #f9f9f9;
-$gray-1: #eceeee;
-$gray-2: #dfe1e1;
-$gray-3: #d0d4d3;
-$gray-4: #c0c5c4;
-$gray-5: #aeb4b3;
-$gray-6: #99a1a0;
-$gray-7: #818b8a;
-$gray-8: #626f6d;
-$gray-9: #334240;
-$black:  #000;
+// Paleta principal LatinR-ish
+$purple:       #6b4f9a;
+$purple-dark:  #4a3571;
 
-// colors
-$teal-light1: #fcfcfc;
-$teal-light2: #745775;
-$teal:        #88398A;
-$teal-dark1:  #4c074d;
-$teal-dark2:  #76043d;
-$orange:      #9ac6c5;
-$orange-light:#a5e6ba;
-$orange-dark: #0cb397;
+$teal:         #008080;
+$teal-light:   #37BBED;
 
-$primary:       $teal-dark1;
-$secondary:     $orange-dark;
-$light:         $teal-light1;
+$yellow:       #f7c545;
+
+// Variables funcionales
+$primary:       $purple-dark;
+$secondary:     $teal;
+$light:         $gray-0;
 $light-accent:  $gray-3;
 $dark:          $gray-9;
-
-// Base document colors
-$navbar-bg: $primary; // navbar
-$navbar-fg: $teal-light1; // navbar foreground elements
-$navbar-hl: $white; // highlight color when hovering over navbar links
-$link-color: $orange-dark; // hyperlinks
+$link-color:    $purple-dark;
 
 // Inline code
-$code-bg: $orange-light; // inline code background color
-$code-color: $orange-dark; // inline code text color
+$code-bg:       $yellow;
+$code-color:    $purple-dark;
 
 // Contrast
-$min-contrast-ratio:   7;
+$min-contrast-ratio: 7;
 
 /*-- scss:rules --*/
 
@@ -61,7 +56,7 @@ h1, h2 {
   font-size: 1.3em;
   font-weight: 900;
   font-family: Domine, serif;
-  color: $teal-dark1;
+  color: $primary;
 }
 
 h2 {
@@ -71,7 +66,7 @@ h2 {
 h3, h4 {
   font-weight: 700;
   font-family: Domine, serif;
-  color: $teal;
+  color: $purple;
 }
 
 h3 {
@@ -90,9 +85,9 @@ h5, h6 {
 }
 
 .fa-solid, .fab, .fa-brands {
-    font-family: 'Font Awesome 6 Brands';
-    font-weight: 400;
-    color: $teal;
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+  color: $purple;
 }
 
 p.subtitle.lead {
@@ -122,9 +117,9 @@ code {
 // images
 
 .figure-img {
-    margin-bottom: 0;
-    line-height: 0;
-    border-radius: 5px;
+  margin-bottom: 0;
+  line-height: 0;
+  border-radius: 5px;
 }
 
 // specific classes
@@ -162,10 +157,11 @@ code {
 .bi-github {
   color: white;
 }
+
 // page buttons
 
 .page-link {
-  background-color: $orange-light;
+  background-color: $yellow;
   color: $secondary;
 }
 
@@ -187,4 +183,3 @@ code {
   border-style: solid;
   border-width: 1px;
 }
-

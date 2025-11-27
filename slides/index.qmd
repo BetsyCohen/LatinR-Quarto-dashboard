@@ -1,7 +1,7 @@
 ---
 title: "Armá un Dashboard con R y Quarto"
-author: "Betsy Cohen<br>RLadies Buenos Aires"
-logo: "images/logo-rladies-BA.png"
+author: "Betsy Cohen<br>RLadies Buenos Aires - NIS"
+logo: "images/logo-latinr.png"
 format: 
   revealjs: 
     width: 1600
@@ -19,39 +19,10 @@ df-print: kable
 
 Asegurate de haber seguido las instrucciones de configuración y que tenés los programas y paquetes que necesitás para seguir el taller
 
-## Agradecimientos
-
-**Este taller y sus materiales se basaron en:**
-
-[Build-a-Dashboard](https://posit-conf-2024.github.io/quarto-dashboards/) dictado por [Mine Çetinkaya-Rundel](https://mine-cr.com/)
-
-\
-
-**Auspisian RLadies Buenos Aires:**
-
-::: columns
-::: {.column width="10%"}
-:::
-
-::: {.column width="20%"}
-![](images/rladies-logo.png){style="border-radius:1em;margin-top:auto" width="170"}
-:::
-
-::: {.column width="40%"}
-![](images/rconsortium.png){style="border-radius:1em;margin-top:auto"}
-:::
-
-::: {.column width="20%"}
-![](images/clipboard-672291485.png)
-:::
-
-::: {.column width="10%"}
-:::
-:::
 
 ## Codigo de conducta
 
-Todos los espacios de participación de R-Ladies Global y RLadies Buenos Aires, incluyendo reuniones presenciales o virtuales, Twitter, Slack y listas de correo se rigen por el [Código de conducta de RLadies](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#spanish).
+Ver código de conducta LatinR.
 
 ## Licencia
 
@@ -63,29 +34,11 @@ Estos materiales están publicados bajo la licencia [Creative Commons Attributio
 
 {{< fa brands creative-commons size=2x >}} {{< fa brands creative-commons-by size=2x >}} {{< fa brands creative-commons-nc size=2x >}} {{< fa brands creative-commons-sa size=2x >}}
 
-## Hacemos a este este bello espacio...
+## Hola Soy Betsy
 
-::: columns
-::: {.column width="50%"}
-![](images/maria.jpg){style="border-radius:1em;margin-top:auto"}
-
-María Nanton
-
-![](images/jesi.png){style="border-radius:1em;margin-top:auto" width="270"}
-
-Jesica Formoso
-:::
-
-::: {.column width="50%"}
 ![](images/betsy2.png){style="border-radius:1em;margin-top:auto"}
 
-Betsabé Cohen\
 
-![](images/vir.jpg){style="border-radius:1em;margin-top:auto"}
-
-Virginia García Alonso
-:::
-:::
 
 # Empecemos por el principio
 
@@ -779,22 +732,7 @@ y entonces...
 
 ![](images/first-dashboard-excercise-goal_3.gif)
 
-# Antes de que te vayas..
-
-## Seguinos
-
-{{< fa brands instagram >}} [\@rladiesba](https://www.instagram.com/rladiesba/)\
-{{< fa brands twitter >}} [\@RLadiesBA](https://x.com/RLadiesBA)\
-{{< fa brands meetup >}} [RLadies Buenos Aires](https://www.meetup.com/es/rladies-buenos-aires/)\
-{{< fa brands youtube >}} [\@RLadiesBuenosAires](https://youtube.com/@RLadiesBuenosAires)\
-{{< fa globe >}} <https://rladiesba.netlify.app/>
-
-## ¡No te pierdas las novedades! {.large-font-slide}
-
-¡En 2025 hicimos!
-
--   Club de lectura del libro [Mastering Shiny](https://mastering-shiny.org/) de Hadley Wickham.
--   Meetup sobre Quarto y tableros con `Quarto`💜
--   Debugging! Muy pronto
-
 # ¡Muchas gracias!
+
+{{< fa brands linkedin >}} [\@betsabe1984](https://www.linkedin.com/in/betsabe1984/)\
+{{< fa mail >}} [betsabecohen@gmail.com](mailito:betsabecohen@gmail.com)

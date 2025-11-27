@@ -6,15 +6,13 @@ editor:
     wrap: 72
 ---
 
-## Fecha y ubicación
+## Fecha
 
-📆 25 de Agosto, 2025
+📆 1 de diciembre 2025
 
 ⏰18:30 - Argentina (UTC -3)
 
-🏫 UNTREF
-
-🐱 [Repositorio en GitHub](https://github.com/BetsyCohen/quarto-dashboards-rladiesBA)
+🐱 [Repositorio en GitHub](https://github.com/BetsyCohen/LatinR-Quarto-dashboard)
 
 \
 
@@ -22,8 +20,7 @@ editor:
 
 Quarto es un sistema de publicación de código abierto diseñado para crear 
 documentos científicos y técnicos de manera dinámica y reproducible.
-Tras nuestro [primer encuentro introductoroio a Quarto con Jesi Formoso](https://jformoso.github.io/quarto-rladiesBA/)
-avanzamos sobre otra de las funcionalidades de esta plataforma: los tableros. 
+En este taller avanzamos sobre una de sus funcionalidades: los tableros. 
 
 Vamos a recorrer sus principales funcionalidades y vamos a sumarle un poquito 
 de magia interactiva con el paquete crosstalk y su kpi widget.
@@ -53,26 +50,10 @@ ciencias sociales.
 
 ## Código de Conducta
 
-R-Ladies se dedica a proporcionar una experiencia libre de acoso para
-todes. [**Conocé el Código de
-Conducta**](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#spanish)
-que se aplica en todos los espacios de participación de R-Ladies Global
-y del capitulo, incluyendo reuniones presenciales o virtuales, Twitter,
-Slack, listas de correo, tanto online como offline.
+XXXX
 
 ## Agradecimientos
 
 Los materiales de este taller se basaron en el taller
 [Build-a-Dashboard.](https://posit-conf-2024.github.io/quarto-dashboards/)
 
-Este taller fue auspiciado por:
-
-[![](slides/images/rladies-logo.png){width="100"}](https://rladies.org/)
-
-[![](slides/images/rconsortium.png){width="366"}](https://r-consortium.org/)
-
-y un agradecimiento especial a la [Universidad Nacional Tres de
-Febrero](https://untref.edu.ar/) por facilitarnos el espacio para este
-encuentro presencial y por acompañar la difusión del mismo.
-
-![](slides/images/clipboard-672291485.png){width="185"}
