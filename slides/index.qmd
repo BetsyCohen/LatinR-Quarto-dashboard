@@ -1,6 +1,12 @@
 ---
-title: "Armá un Dashboard con R y Quarto"
-author: "Betsy Cohen<br>RLadies Buenos Aires - NIS"
+title: "Tableros con Quarto Dashboards y Crosswalk"
+author:
+  - name: "Betsy Cohen"
+  affiliations: 
+    - name: "Núcleo de Innovación Social"
+    - name: "RLadies Buenos Aires"
+date: "2024-12-01"
+footer: "https://betsycohen.github.io/LatinR-Quarto-dashboard/"
 logo: "images/logo-latinr.png"
 format: 
   revealjs: 
@@ -15,10 +21,28 @@ execute:
 df-print: kable
 ---
 
-## Mientras esperás a que comencemos...
+## Bienvenvidxs! 
 
-Asegurate de haber seguido las instrucciones de configuración y que tenés los programas y paquetes que necesitás para seguir el taller
+Antes de arrancar asegurate de haber seguido las instrucciones de configuración y que tenés los programas y paquetes que necesitás para seguir el taller
 
+
+## Nuestra agenda para hoy
+
+-   Layout
+
+-   Ejercicio Layout
+
+-   Value boxes
+
+-   Ejercicio Value boxes
+
+-   🧉 Matecito break
+
+-   Crosstalk
+
+-   Ejercicio Crosstalk
+
+-   Cierre
 
 ## Codigo de conducta
 

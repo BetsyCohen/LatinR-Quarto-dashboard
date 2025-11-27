@@ -1,5 +1,5 @@
 ---
-title: "Armá un Dashboard con R y Quarto"
+title: "Tableros con Quarto Dashboards y Crosswalk"
 format: html
 editor: 
   markdown: 
@@ -10,7 +10,7 @@ editor:
 
 📆 1 de diciembre 2025
 
-⏰18:30 - Argentina (UTC -3)
+⏰18:00- Argentina (UTC -3)
 
 🐱 [Repositorio en GitHub](https://github.com/BetsyCohen/LatinR-Quarto-dashboard)
 
@@ -24,6 +24,7 @@ En este taller avanzamos sobre una de sus funcionalidades: los tableros.
 
 Vamos a recorrer sus principales funcionalidades y vamos a sumarle un poquito 
 de magia interactiva con el paquete crosstalk y su kpi widget.
+
 
 ## Objetivos de aprendizaje
 
@@ -50,10 +51,10 @@ ciencias sociales.
 
 ## Código de Conducta
 
-XXXX
+Al igual que el resto de las actividades de esta Conf para participar debes haber aceptado el siguiente [códogo de conducta](https://latinr.org/sobre/coc/)
 
 ## Agradecimientos
 
 Los materiales de este taller se basaron en el taller
-[Build-a-Dashboard.](https://posit-conf-2024.github.io/quarto-dashboards/)
+[Build-a-Dashboard.](https://posit-conf-2024.github.io/quarto-dashboards/) de [Mine Çetinkaya-Rundel](https://mine-cr.com/) 
 
