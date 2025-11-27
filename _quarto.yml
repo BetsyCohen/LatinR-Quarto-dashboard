@@ -27,10 +27,10 @@ website:
   page-footer:
     left: "&copy; 2025 Betsy Cohen"
     right: "Website construida con [Quarto](https://quarto.org/)."
-    background: "#4c074d"
+    background: "#4c3ceb"
 
   sidebar:
-    background: "#4c074d"
+    background: "#4c3ceb"
     logo: "images/logo-unificado.png"
     pinned: true
     align: center
