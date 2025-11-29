@@ -1,31 +1,24 @@
-# Armá un Dashboard con R y Quarto
+# Tableros con Quarto Dashboards y Crosswalk
 
 ## Fecha y ubicación
 
-📆 25 de Agosto, 2025
+📆 1 de diciembre, 2025
 
-⏰18:30 pm - 20:00 pm Argentina (UTC -3)
+⏰18:00 pm - 20:00 pm Argentina (UTC -3)
 
-🗺️ Online (el link de zoom se compartirá el mismo día)
+🗺️ Online
 
 
 ## Sobre el taller
 
-En continuidad con el el encuentro anterior de [Transforma tus datos en historias visuales con
-Quarto](https://www.meetup.com/rladies-buenos-aires/events/304386918/?notificationId=1437418362859659264&eventOrigin=group_events_list)
-en este taller introduce el uso de Quarto para Dahsboards estaticos en HTML. 
+Quarto es un sistema de publicación de código abierto diseñado para crear documentos científicos y técnicos de manera dinámica y reproducible. En este taller avanzamos sobre una de sus funcionalidades: los tableros.
 
-También sumamos el uso de Crosstalk y su KPI Widgett para filtros dinámicos
+Vamos a recorrer sus principales funcionalidades y vamos a sumarle un poquito de magia interactiva con el paquete crosstalk y su kpi widget.
 
 
 ## Código de Conducta
-
-R-Ladies se dedica a proporcionar una experiencia libre de acoso para
-todes. [**Conocé el Código de
-Conducta**](https://github.com/rladies/.github/blob/master/CODE_OF_CONDUCT.md#spanish)
-que se aplica en todos los espacios de participación de R-Ladies Global
-y del capitulo, incluyendo reuniones presenciales o virtuales, Twitter,
-Slack, listas de correo, tanto online como offline.
+Todas las personas que participan de LatinR deben estar de acuerdo con el [código de conducta](https://latinr.org/sobre/coc/) 
+Esperamos que LatinR sea una conferencia libre de acoso para todas las personas. Si en algún momento sentis u observas alguna situación fuera de lugar contactá a alguna de las personas del comité organizador o escribirnos a [info@latinr.org](mailto:info@latinr.org)
 
 ## Agradecimientos
 
