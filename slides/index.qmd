@@ -23,48 +23,40 @@ df-print: kable
 
 ## Bienvenvidxs! 
 
-Antes de arrancar asegurate de haber seguido las instrucciones de configuración y que tenés los programas y paquetes que necesitás para seguir el taller
+Antes de arrancar asegurate de haber seguido las instrucciones de configuración y que tenés los programas y paquetes que necesitás para seguir el taller. 
+
+Si vas a seguir los ejrecicios deberás ingresar en  [https://betsycohen.github.io/LatinR-Quarto-dashboard/](https://betsycohen.github.io/LatinR-Quarto-dashboard/) y la [carpeta del ejercicio](https://betsycohen.github.io/quarto-dashboards-rladiesBA/exercises.zip) que contiene:
+
+📁 datos
+
+📁 imagenes
+
+![](images/r-file.png) Archivos con ejercicios borrador y archivos de r con ejercicios resueltos
+
 
 
 ## Nuestra agenda para hoy
 
 -   Layout
 
--   Ejercicio Layout
+-   Value boxes y themes
 
--   Value boxes
-
--   Ejercicio Value boxes
-
--   🧉 Matecito break
+-   Pausa 🧉
 
 -   Crosstalk
 
--   Ejercicio Crosstalk
+-   Tiempo para preguntas
 
--   Cierre
 
-## Codigo de conducta
-
-Ver código de conducta LatinR.
-
-## Licencia
-
-Estos materiales están publicados bajo la licencia [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA)](https://creativecommons.org/licenses/by-nc-sa/4.0/), la cual implica:
-
--   Atribución: Podés compartir y adaptar el material siempre que reconozcas la autoría de forma adecuada.
--   Uso no comercial: No está permitido usar el material con fines comerciales.
--   Compartir igual: Si adaptás o transformas el material, debés distribuirlo bajo la misma licencia.
-
-{{< fa brands creative-commons size=2x >}} {{< fa brands creative-commons-by size=2x >}} {{< fa brands creative-commons-nc size=2x >}} {{< fa brands creative-commons-sa size=2x >}}
-
-## Hola Soy Betsy
+## Hola! Soy Betsy
 
 ![](images/betsy2.png){style="border-radius:1em;margin-top:auto"}
 
 
 
-# Empecemos por el principio
+# 01. El Layout: Empecemos por el principio {.section-divider}
+
+![](images/layout-sketch.png)
 
 ## La unidad fundamental en los tableros de Quarto son las tarjetas {auto-animate="true" auto-animate-easing="ease-in-out"}
 
@@ -114,7 +106,7 @@ Todos los tableros tienen una barra de navegación superior o \`nav-bar\` a la q
 
 ::: columns
 ::: {.column width="50%"}
-::: r-box
+
 ``` {.yaml filename="dashboard-r.qmd"}
 ---
 title: "Mi primer tablero en quarto"
@@ -125,7 +117,7 @@ format:
     nav-buttons: [linkedin,twitter,github]
 ---
 ```
-:::
+
 :::
 ::: {.column width="50%"}
 ![](images/navigation-toolbar.png)
@@ -237,7 +229,7 @@ format: dashboard
 
 :::
 
-## Como dijo Gilda: pasito a pasito
+## Pasito a pasito: el layout en acción
 
 ![](images/Gilda.jpg){style="border-radius:1em;margin-top:auto"}
 
@@ -418,19 +410,32 @@ ggplot(mpg, aes(x = drv)) +
 :::
 :::
 
-## Ahora te toca a vos 
+## Ejercicio 1: Layout {.smaller}
 
-Vamos a trabajar con un ranking de los libros más vendidos que levantamos de una conocida cadena de librerías en buenos aires que empieza con C y terminda con uspide y que podes descargar desde la misma carpeta del ejercicio [aquí](https://betsycohen.github.io/quarto-dashboards-rladiesBA/exercises.zip) y vamos a crear una serie de visualizaciones simples usando `plotly{}`:
+Vamos a trabajar con un ranking de los libros más vendidos creando un dashboard con tres tarjetas. 
 
-1.  Una tabla con un ranking de libros
-2.  Un gráfico de barras con el raiting promedio por género
-3.  Un Boxplot de precio por género
+En la [carpeta del ejercicio](https://betsycohen.github.io/quarto-dashboards-rladiesBA/exercises.zip) ya tenemos listo un primer borrador con el código para visualizar una tabla y dos gráficos hechos con `plotly{}`. 
 
-🛟(un ayudin en la diapo siguiente)🛟
+<br>
 
-## Copiar y pegar las visualizaciones {.smaller}
+**Si por alguna razón no pudiste descargar el archivo también podes copiar el código de la próxima diapo de esta presentación.**
 
-Para agilizar el trabajo los gráficos ya se encuentran listos aquí:
+
+#### ¡A trabajar!
+
+<br>
+
+::: tu-turno-box
+1.   Creá un proyecto Quarto setendo el formato como dashboard
+2.   Indicá un título en YAML
+3.   En un primer chunck de setup llamá a las librerías `tidyverse`, `dt` y `plotly` y carga los datos de libros.
+4.   A cada tarjeta asignales títulos usando la opción `#| title:`
+5.   Setea las dos últimas tarjetas como tabs usando `{.tabset}` en la definición del nivel de la fila.
+:::
+
+{{< countdown minutes=15 >}}
+
+## Por si necesitas Copiar y pegar las visualizaciones {.smaller}
 
 ::: r-box
 ````{.yaml filename="dashboard-r.qmd"}
@@ -496,26 +501,24 @@ plot_ly(
 ````
 :::
 
-## ¡Manos a la obra!
-
-
--   Crea un proyecto Quarto setendo el formato como dashboard
--   Indica un título en YAML
--   En un primer chunck de setup llamá a las librerías `tidyverse`, `dt` y `plotly` y carga los datos de libros.
--   A cada tarjeta asignales títulos usando la opción `#| title:`
--   Setea las dos últimas tarjetas como tabs usando `{.tabset}` en la definición del nivel de la fila.
-
-y...🪄
 
 ## Cuando termines deberias tener algo así {.smaller}
 
-![](images/first-dashboard-excercise-goal.gif)
+<iframe 
+  src="dashboards/ejemplo1.html"
+  width="100%" 
+  height="700" 
+  style="border: none;">
+</iframe>
+
 :::
 :::
 
-# Más objetos máaaaaaaaaas
+# 02. Las Value Boxes y themes {.section-divider}
 
-## Value boxes
+![](images/value-boxes.png)
+
+## Qué son las Value boxes
 
 -   Las value boxes son un tipo de tarjeta especial que sirve para llevar la ateción a alguna medida de resumen específica o valor de referencia.
 -   Podes crear value boxes en alguna celda especifica o como divs en el markdown
@@ -580,7 +583,7 @@ paste(lowest_mileage_cty, "mpg")
 ````
 :::
 
-## Agregar logos y themes
+## Hermoseando con Themes
 
 Como en otras publicaciones de Quarto podemos tunear los themes (usando scss) o los mismos que ya vienen cargados de Bootstrap así como agregar logos en el slider superior. Todas cosas que podemos hacer desde el YAML
 
@@ -596,16 +599,16 @@ editor: source
 ```
 :::
 
-## Ahora ustedes {.smaller}
+## Ejercicio 2: value boxes y themes {.smaller}
 
-::: columns
-::: {.column width="50%"}
-![](images/more_rial.jpg)
-:::
+Vamos a tomar **10 minutos** y poner manos a la obra:
 
-::: {.column width="50%"}
+::: tu-turno-box
 -   Agregá tres value boxes indicando precio promedio, raiting promedio y porcentaje de libros que son ebook Usar los iconos "cash","star" y "phone" correspondientemente.
 -   Cambia el theme del dashboard a uno de tu elección (por ej. minty) y agregá la imagen "images/logo.png" como logo desde YAML
+:::
+
+{{< countdown minutes=10 >}}
 
 ::: {.callout-tip collapse="true"}
 Podes copiar el cálculo de los value boxes de aquí
@@ -633,14 +636,27 @@ pct_ebook <- libros %>%
 ```
 :::
 :::
-:::
-:::
 
-## Cuando termines debería quedar algo como esto
+## Cuando termines deberias tener algo así {.smaller}
 
-![](images/first-dashboard-excercise-goal-2.png)
+<iframe 
+  src="dashboards/ejemplo3.html"
+  width="100%" 
+  height="700" 
+  style="border: none;">
+</iframe>
 
-# BONUS: Crosstalk para un poquito de interactividad
+
+# Nos tomamos 5 y volvemos. {.section-divider}
+![](images/breake-time.gif)
+
+
+{{< countdown minutes=5 >}}
+
+
+# 03. Crosstalk para un poquito de interactividad {.section-divider}
+
+![](images/crosstalk-section.gif)
 
 ## ¿Qué es crostalk?
 
@@ -719,8 +735,9 @@ kpiwidget(sd,
 ```
 :::
 
-## Aplicando esto a nuestro dashboard de libros...{.smaller}
+## Ejerecicio 3: agregando interactividad con crosstalk...{.smaller}
 
+::: tu-turno-box
 -   **Paso 1:** Vamos a cambiar un poco el layout pasando a dos columnas: una la vamos a usar como sidebar para los filtros y otra la vamos a mentener como cuerpo de nuestro
 
 -   **Paso 2:** Creamos el objeto compartido `shared_libros` con `ShareData$new` de CrossTalk a partir de nuestra tabla de libros
@@ -735,12 +752,10 @@ kpiwidget(sd,
 #| label: filtro-generos
 filter_select("filtro_genero", "Género", shared_libros, ~genero, multiple = TRUE)
 ```
-<br>
 ```{{r}}
 #| label: filtro-precio
 filter_slider("filtro_precio", "Precio (ARS)", shared_libros, ~precio, width = "100%")
 ```
-<br>
 ```{{r}}
 #| label: filtro-ebook
 filter_checkbox("filtro_ebook", "Disponible en Ebook", shared_libros, ~ebook, inline = TRUE)
@@ -749,12 +764,37 @@ filter_checkbox("filtro_ebook", "Disponible en Ebook", shared_libros, ~ebook, in
 :::
 
 -   **Paso4:**: En los gráficos vamos a reemplazar la tabla libros por shared_libros
+:::
 
-y entonces...
+{{< countdown minutes=15 >}}
 
-## Tablero con crosstalk
 
-![](images/first-dashboard-excercise-goal_3.gif)
+
+## Cuando termines deberias tener algo así {.smaller}
+
+<iframe 
+  src="dashboards/ejemplo4.html"
+  width="100%" 
+  height="700" 
+  style="border: none;">
+</iframe>
+
+
+
+## Publicación y exportación:
+
+- Como un html stand alone usando la opción `embed-resources: true` en tu yaml, ideal si es de circulación interna o lo queres embeber en otro lado tipo iframe
+
+- Con el comando `quarto publish` en cualquiera de los [servicios disponibles](https://quarto.org/docs/dashboards/deployment.html#static-dashboards) o via integración contínua, pero ojo que después quedan públicos. 
+
+En ese caso te recomiendo ver [este tutorial](https://youtu.be/5zYrgRylkH0?si=N5PIJdi5qPxMOmDT) de [Melissa Van Bussel](https://github.com/melissavanbussel) sobre publicación de dahboards con GitHub Actions
+
+- Quarto Dahboards también permite integrar herramientas de shiny, pero en ese caso ya vas a necesitar deployar en un servidor como shiny server (open source) o posit connect (comercial). Más sobre ese tema [aquí](https://quarto.org/docs/dashboards/deployment.html#shiny-dashboards)
+
+
+## ¿Preguntas/ comentarios?
+
+![](images/questions.gif)
 
 # ¡Muchas gracias!
 

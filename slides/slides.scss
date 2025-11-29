@@ -86,7 +86,7 @@ $min-contrast-ratio: 7;
 
 
 // ============================
-// START CSS RULES
+// CSS RULES
 // ============================
 
 .warning {
@@ -216,10 +216,74 @@ $min-contrast-ratio: 7;
   background: #BBBDC050 center no-repeat;
 }
 
-// special slides
+// slides de ejercicios
 .reveal .slide .your-turn {
   padding: 10px 10px 3px 10px;
   margin: 6px 0;
   border-left: solid 5px #59799e;
   background-color: #59799e50;
 }
+
+.reveal .slide .ejercicio-box {
+  padding: 0.7em 1.2em;
+  margin: 12px 0;
+  border-left: 6px solid $purple;
+  background-color: rgba($purple, 0.15);
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.reveal .slide .tu-turno-box {
+  padding: 0.7em 1.2em;
+  margin: 12px 0;
+  border-left: 6px solid $teal-light;
+  background-color: rgba($teal-light, 0.18);
+  border-radius: 4px;
+
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.reveal .slide .codigo-r-box {
+  padding: 0.9em 1.2em 0.9em 3.5em;
+  margin: 14px 0;
+  border-left: 6px solid #3767B6;
+  background-color: rgba(#3767B6, 0.15);
+  border-radius: 4px;
+
+  background-image: url("imagenes/r-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0.8em 0.8em;
+  background-size: 40px;
+
+  font-family: $codeFont;
+  font-size: 0.9em;
+}
+
+
+// diapos de secciones
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 2em 0 1em 0;
+}
+
+.section-divider .line {
+  flex-grow: 1;
+  height: 6px;
+  background: $purple-dark;
+  border-radius: 3px;
+}
+
+.section-divider .title {
+  font-size: 2em;
+  font-weight: 800;
+  color: $purple-dark;
+  white-space: nowrap;
+}
+
+
