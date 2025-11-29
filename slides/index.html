@@ -8,6 +8,8 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-d640c705e8c17715bca3574aa719063f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/countdown-0.6.0/countdown.js"></script>
+<link href="../site_libs/quarto-contrib/countdown-0.6.0/countdown.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.8.26">
@@ -99,7 +101,7 @@
     code span.vs { color: #008000; } /* VerbatimString */
     code span.wa { color: #696969; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f8ea7956442610259c7f7731b3b01338.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-0b74bb407c11cd7c3951519f127a24af.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -233,44 +235,31 @@ Betsy Cohen
 </section>
 <section id="bienvenvidxs" class="slide level2">
 <h2>Bienvenvidxs!</h2>
-<p>Antes de arrancar asegurate de haber seguido las instrucciones de configuración y que tenés los programas y paquetes que necesitás para seguir el taller</p>
+<p>Antes de arrancar asegurate de haber seguido las instrucciones de configuración y que tenés los programas y paquetes que necesitás para seguir el taller.</p>
+<p>Si vas a seguir los ejrecicios deberás ingresar en <a href="https://betsycohen.github.io/LatinR-Quarto-dashboard/">https://betsycohen.github.io/LatinR-Quarto-dashboard/</a> y la <a href="https://betsycohen.github.io/quarto-dashboards-rladiesBA/exercises.zip">carpeta del ejercicio</a> que contiene:</p>
+<p>📁 datos</p>
+<p>📁 imagenes</p>
+<p><img data-src="images/r-file.png"> Archivos con ejercicios borrador y archivos de r con ejercicios resueltos</p>
 </section>
 <section id="nuestra-agenda-para-hoy" class="slide level2">
 <h2>Nuestra agenda para hoy</h2>
 <ul>
 <li><p>Layout</p></li>
-<li><p>Ejercicio Layout</p></li>
-<li><p>Value boxes</p></li>
-<li><p>Ejercicio Value boxes</p></li>
-<li><p>🧉 Matecito break</p></li>
+<li><p>Value boxes y themes</p></li>
+<li><p>Pausa 🧉</p></li>
 <li><p>Crosstalk</p></li>
-<li><p>Ejercicio Crosstalk</p></li>
-<li><p>Cierre</p></li>
+<li><p>Tiempo para preguntas</p></li>
 </ul>
-</section>
-<section id="codigo-de-conducta" class="slide level2">
-<h2>Codigo de conducta</h2>
-<p>Ver código de conducta LatinR.</p>
-</section>
-<section id="licencia" class="slide level2">
-<h2>Licencia</h2>
-<p>Estos materiales están publicados bajo la licencia <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA)</a>, la cual implica:</p>
-<ul>
-<li>Atribución: Podés compartir y adaptar el material siempre que reconozcas la autoría de forma adecuada.</li>
-<li>Uso no comercial: No está permitido usar el material con fines comerciales.</li>
-<li>Compartir igual: Si adaptás o transformas el material, debés distribuirlo bajo la misma licencia.</li>
-</ul>
-<p><i class="fa-brands fa-creative-commons fa-2x" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by fa-2x" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc fa-2x" aria-label="creative-commons-nc"></i> <i class="fa-brands fa-creative-commons-sa fa-2x" aria-label="creative-commons-sa"></i></p>
 </section>
 <section id="hola-soy-betsy" class="slide level2">
-<h2>Hola Soy Betsy</h2>
+<h2>Hola! Soy Betsy</h2>
 
 <img data-src="images/betsy2.png" style="border-radius:1em;margin-top:auto" class="r-stretch"></section>
 <section>
-<section id="empecemos-por-el-principio" class="title-slide slide level1 center">
-<h1>Empecemos por el principio</h1>
+<section id="el-layout-empecemos-por-el-principio" class="title-slide slide level1 section-divider center">
+<h1>01. El Layout: Empecemos por el principio</h1>
 
-</section>
+<img data-src="images/layout-sketch.png" class="r-stretch"></section>
 <section id="la-unidad-fundamental-en-los-tableros-de-quarto-son-las-tarjetas" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
 <h2 data-id="quarto-animate-title">La unidad fundamental en los tableros de Quarto son las tarjetas</h2>
 <div class="r-hstack">
@@ -321,7 +310,6 @@ Betsy Cohen
 <p>Todos los tableros tienen una barra de navegación superior o `nav-bar` a la que le podemos agregar desde YAML diferentes elementos como <strong>botones de navegación</strong> (como links a linkedin, twitter) y <strong>botones personalizados</strong></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="r-box">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>dashboard-r.qmd</strong></pre>
@@ -334,7 +322,6 @@ Betsy Cohen
 <span id="cb1-6"><a></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> images/rladies-hex.png</span></span>
 <span id="cb1-7"><a></a><span class="at">    </span><span class="fu">nav-buttons</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">linkedin</span><span class="kw">,</span><span class="at">twitter</span><span class="kw">,</span><span class="at">github</span><span class="kw">]</span></span>
 <span id="cb1-8"><a></a><span class="pp">---</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
 </div>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/navigation-toolbar.png"></p>
@@ -448,8 +435,8 @@ Betsy Cohen
 <p><img data-src="images/chart-tabset-row.png" height="700"></p>
 </div></div>
 </section>
-<section id="como-dijo-gilda-pasito-a-pasito" class="slide level2">
-<h2>Como dijo Gilda: pasito a pasito</h2>
+<section id="pasito-a-pasito-el-layout-en-acción" class="slide level2">
+<h2>Pasito a pasito: el layout en acción</h2>
 
 <img data-src="images/Gilda.jpg" style="border-radius:1em;margin-top:auto" class="r-stretch"></section>
 <section id="paso-1-armá-un-archivo-quarto-con-format-dashboard-en-el-yaml" class="slide level2" data-auto-animate="true">
@@ -640,19 +627,28 @@ Betsy Cohen
 <p><img data-src="images/first-dashboard-r-3.png"></p>
 </div></div>
 </section>
-<section id="ahora-te-toca-a-vos" class="slide level2">
-<h2>Ahora te toca a vos</h2>
-<p>Vamos a trabajar con un ranking de los libros más vendidos que levantamos de una conocida cadena de librerías en buenos aires que empieza con C y terminda con uspide y que podes descargar desde la misma carpeta del ejercicio <a href="https://betsycohen.github.io/quarto-dashboards-rladiesBA/exercises.zip">aquí</a> y vamos a crear una serie de visualizaciones simples usando <code>plotly{}</code>:</p>
+<section id="ejercicio-1-layout" class="slide level2 smaller">
+<h2>Ejercicio 1: Layout</h2>
+<p>Vamos a trabajar con un ranking de los libros más vendidos creando un dashboard con tres tarjetas.</p>
+<p>En la <a href="https://betsycohen.github.io/quarto-dashboards-rladiesBA/exercises.zip">carpeta del ejercicio</a> ya tenemos listo un primer borrador con el código para visualizar una tabla y dos gráficos hechos con <code>plotly{}</code>.</p>
+<p><br></p>
+<p><strong>Si por alguna razón no pudiste descargar el archivo también podes copiar el código de la próxima diapo de esta presentación.</strong></p>
+<h4 id="a-trabajar">¡A trabajar!</h4>
+<p><br></p>
+<div class="tu-turno-box">
 <ol type="1">
-<li>Una tabla con un ranking de libros</li>
-<li>Un gráfico de barras con el raiting promedio por género</li>
-<li>Un Boxplot de precio por género</li>
+<li>Creá un proyecto Quarto setendo el formato como dashboard</li>
+<li>Indicá un título en YAML</li>
+<li>En un primer chunck de setup llamá a las librerías <code>tidyverse</code>, <code>dt</code> y <code>plotly</code> y carga los datos de libros.</li>
+<li>A cada tarjeta asignales títulos usando la opción <code>#| title:</code></li>
+<li>Setea las dos últimas tarjetas como tabs usando <code>{.tabset}</code> en la definición del nivel de la fila.</li>
 </ol>
-<p>🛟(un ayudin en la diapo siguiente)🛟</p>
+</div>
+<countdown-timer id="timer_734a67174f03d72fd7bc331041e7fe01e5129d17" minutes="15" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 </section>
-<section id="copiar-y-pegar-las-visualizaciones" class="slide level2 smaller">
-<h2>Copiar y pegar las visualizaciones</h2>
-<p>Para agilizar el trabajo los gráficos ya se encuentran listos aquí:</p>
+<section id="por-si-necesitas-copiar-y-pegar-las-visualizaciones" class="slide level2 smaller">
+<h2>Por si necesitas Copiar y pegar las visualizaciones</h2>
 <div class="r-box">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
@@ -720,28 +716,19 @@ Betsy Cohen
 </div>
 </div>
 </section>
-<section id="manos-a-la-obra" class="slide level2">
-<h2>¡Manos a la obra!</h2>
-<ul>
-<li>Crea un proyecto Quarto setendo el formato como dashboard</li>
-<li>Indica un título en YAML</li>
-<li>En un primer chunck de setup llamá a las librerías <code>tidyverse</code>, <code>dt</code> y <code>plotly</code> y carga los datos de libros.</li>
-<li>A cada tarjeta asignales títulos usando la opción <code>#| title:</code></li>
-<li>Setea las dos últimas tarjetas como tabs usando <code>{.tabset}</code> en la definición del nivel de la fila.</li>
-</ul>
-<p>y…🪄</p>
-</section>
 <section id="cuando-termines-deberias-tener-algo-así" class="slide level2 smaller">
 <h2>Cuando termines deberias tener algo así</h2>
-<p><img data-src="images/first-dashboard-excercise-goal.gif"> ::: :::</p>
+<iframe src="dashboards/ejemplo1.html" width="100%" height="700" style="border: none;">
+</iframe>
+<p>::: :::</p>
 </section></section>
 <section>
-<section id="más-objetos-máaaaaaaaaas" class="title-slide slide level1 center">
-<h1>Más objetos máaaaaaaaaas</h1>
+<section id="las-value-boxes-y-themes" class="title-slide slide level1 section-divider center">
+<h1>02. Las Value Boxes y themes</h1>
 
-</section>
-<section id="value-boxes" class="slide level2">
-<h2>Value boxes</h2>
+<img data-src="images/value-boxes.png" class="r-stretch"></section>
+<section id="qué-son-las-value-boxes" class="slide level2">
+<h2>Qué son las Value boxes</h2>
 <ul>
 <li>Las value boxes son un tipo de tarjeta especial que sirve para llevar la ateción a alguna medida de resumen específica o valor de referencia.</li>
 <li>Podes crear value boxes en alguna celda especifica o como divs en el markdown</li>
@@ -808,8 +795,8 @@ Betsy Cohen
 </div>
 </div>
 </section>
-<section id="agregar-logos-y-themes" class="slide level2">
-<h2>Agregar logos y themes</h2>
+<section id="hermoseando-con-themes" class="slide level2">
+<h2>Hermoseando con Themes</h2>
 <p>Como en otras publicaciones de Quarto podemos tunear los themes (usando scss) o los mismos que ya vienen cargados de Bootstrap así como agregar logos en el slider superior. Todas cosas que podemos hacer desde el YAML</p>
 <div class="r-boxes">
 <div class="code-with-filename">
@@ -826,16 +813,17 @@ Betsy Cohen
 </div>
 </div>
 </section>
-<section id="ahora-ustedes" class="slide level2 smaller">
-<h2>Ahora ustedes</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/more_rial.jpg"></p>
-</div><div class="column" style="width:50%;">
+<section id="ejercicio-2-value-boxes-y-themes" class="slide level2 smaller">
+<h2>Ejercicio 2: value boxes y themes</h2>
+<p>Vamos a tomar <strong>10 minutos</strong> y poner manos a la obra:</p>
+<div class="tu-turno-box">
 <ul>
 <li>Agregá tres value boxes indicando precio promedio, raiting promedio y porcentaje de libros que son ebook Usar los iconos “cash”,“star” y “phone” correspondientemente.</li>
 <li>Cambia el theme del dashboard a uno de tu elección (por ej. minty) y agregá la imagen “images/logo.png” como logo desde YAML</li>
 </ul>
+</div>
+<countdown-timer id="timer_734a67174f03d72fd7bc331041e7fe01e5129d17" minutes="10" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -874,17 +862,24 @@ Betsy Cohen
 </div>
 </div>
 </div>
-</div></div>
 </section>
-<section id="cuando-termines-debería-quedar-algo-como-esto" class="slide level2">
-<h2>Cuando termines debería quedar algo como esto</h2>
+<section id="cuando-termines-deberias-tener-algo-así-1" class="slide level2 smaller">
+<h2>Cuando termines deberias tener algo así</h2>
+<iframe src="dashboards/ejemplo3.html" width="100%" height="700" style="border: none;">
+</iframe>
+</section></section>
+<section id="nos-tomamos-5-y-volvemos." class="title-slide slide level1 section-divider center">
+<h1>Nos tomamos 5 y volvemos.</h1>
 
-<img data-src="images/first-dashboard-excercise-goal-2.png" class="r-stretch"></section></section>
+<img data-src="images/breake-time.gif" class="r-stretch"><countdown-timer id="timer_734a67174f03d72fd7bc331041e7fe01e5129d17" minutes="05" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
+</section>
+
 <section>
-<section id="bonus-crosstalk-para-un-poquito-de-interactividad" class="title-slide slide level1 center">
-<h1>BONUS: Crosstalk para un poquito de interactividad</h1>
+<section id="crosstalk-para-un-poquito-de-interactividad" class="title-slide slide level1 section-divider center">
+<h1>03. Crosstalk para un poquito de interactividad</h1>
 
-</section>
+<img data-src="images/crosstalk-section.gif" class="r-stretch"></section>
 <section id="qué-es-crostalk" class="slide level2">
 <h2>¿Qué es crostalk?</h2>
 <ul>
@@ -956,7 +951,7 @@ Betsy Cohen
     "6": ["Mazda RX4", "Mazda RX4 Wag", "Hornet 4 Drive", "Valiant", "Merc 280", "Merc 280C", "Ferrari Dino"],
     "8": ["Hornet Sportabout", "Duster 360", "Merc 450SE", "Merc 450SL", "Merc 450SLC", "Cadillac Fleetwood", "Lincoln Continental", "Chrysler Imperial", "Dodge Challenger", "AMC Javelin", "Camaro Z28", "Pontiac Firebird", "Ford Pantera L", "Maserati Bora"]
   },
-  "group": ["SharedData7498d6d1"]
+  "group": ["SharedData6fdc1e73"]
 }</script>
 </div>
 <div class="form-group crosstalk-input crosstalk-input-slider js-range-slider" id="hp" style="width: 100%;">
@@ -965,7 +960,7 @@ Betsy Cohen
 <script type="application/json" data-for="hp">{
   "values": [52, 62, 65, 66, 66, 91, 93, 95, 97, 105, 109, 110, 110, 110, 113, 123, 123, 150, 150, 175, 175, 175, 180, 180, 180, 205, 215, 230, 245, 245, 264, 335],
   "keys": ["Honda Civic", "Merc 240D", "Toyota Corolla", "Fiat 128", "Fiat X1-9", "Porsche 914-2", "Datsun 710", "Merc 230", "Toyota Corona", "Valiant", "Volvo 142E", "Mazda RX4", "Mazda RX4 Wag", "Hornet 4 Drive", "Lotus Europa", "Merc 280", "Merc 280C", "Dodge Challenger", "AMC Javelin", "Hornet Sportabout", "Pontiac Firebird", "Ferrari Dino", "Merc 450SE", "Merc 450SL", "Merc 450SLC", "Cadillac Fleetwood", "Lincoln Continental", "Chrysler Imperial", "Duster 360", "Camaro Z28", "Ford Pantera L", "Maserati Bora"],
-  "group": ["SharedData7498d6d1"]
+  "group": ["SharedData6fdc1e73"]
 }</script>
 </div>
 <div id="auto" class="form-group crosstalk-input-select crosstalk-input">
@@ -981,18 +976,18 @@ Betsy Cohen
     "No": ["Mazda RX4", "Mazda RX4 Wag", "Datsun 710", "Fiat 128", "Honda Civic", "Toyota Corolla", "Fiat X1-9", "Porsche 914-2", "Lotus Europa", "Ford Pantera L", "Ferrari Dino", "Maserati Bora", "Volvo 142E"],
     "Yes": ["Hornet 4 Drive", "Hornet Sportabout", "Valiant", "Duster 360", "Merc 240D", "Merc 230", "Merc 280", "Merc 280C", "Merc 450SE", "Merc 450SL", "Merc 450SLC", "Cadillac Fleetwood", "Lincoln Continental", "Chrysler Imperial", "Toyota Corona", "Dodge Challenger", "AMC Javelin", "Camaro Z28", "Pontiac Firebird"]
   },
-  "group": ["SharedData7498d6d1"]
+  "group": ["SharedData6fdc1e73"]
 }</script>
 </div>
 </div>
 </div>
 <div class="col-xs-4">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-873c5b9382449d7b78a8" style="width:100%;height:400px;"></div>
-<script type="application/json" data-for="htmlwidget-873c5b9382449d7b78a8">{"x":{"visdat":{"15a34ebbf8b9":["function () ","plotlyVisDat"]},"cur_data":"15a34ebbf8b9","attrs":{"15a34ebbf8b9":{"x":{},"y":{},"mode":"markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Peso"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Millas por galón"},"dragmode":"zoom","hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2.3199999999999998,3.1899999999999999,3.1499999999999999,2.2000000000000002,1.615,1.835,2.4649999999999999,1.9350000000000001,2.1400000000000001,1.5129999999999999,2.7799999999999998],"y":[22.800000000000001,24.399999999999999,22.800000000000001,32.399999999999999,30.399999999999999,33.899999999999999,21.5,27.300000000000001,26,30.399999999999999,21.399999999999999],"mode":"markers","type":"scatter","key":["Datsun 710","Merc 240D","Merc 230","Fiat 128","Honda Civic","Toyota Corolla","Toyota Corona","Fiat X1-9","Porsche 914-2","Lotus Europa","Volvo 142E"],"set":"SharedData7498d6d1","name":"4","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[2.6200000000000001,2.875,3.2149999999999999,3.46,3.4399999999999999,3.4399999999999999,2.77],"y":[21,21,21.399999999999999,18.100000000000001,19.199999999999999,17.800000000000001,19.699999999999999],"mode":"markers","type":"scatter","key":["Mazda RX4","Mazda RX4 Wag","Hornet 4 Drive","Valiant","Merc 280","Merc 280C","Ferrari Dino"],"set":"SharedData7498d6d1","name":"6","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[3.4399999999999999,3.5699999999999998,4.0700000000000003,3.73,3.7799999999999998,5.25,5.4240000000000004,5.3449999999999998,3.52,3.4350000000000001,3.8399999999999999,3.8450000000000002,3.1699999999999999,3.5699999999999998],"y":[18.699999999999999,14.300000000000001,16.399999999999999,17.300000000000001,15.199999999999999,10.4,10.4,14.699999999999999,15.5,15.199999999999999,13.300000000000001,19.199999999999999,15.800000000000001,15],"mode":"markers","type":"scatter","key":["Hornet Sportabout","Duster 360","Merc 450SE","Merc 450SL","Merc 450SLC","Cadillac Fleetwood","Lincoln Continental","Chrysler Imperial","Dodge Challenger","AMC Javelin","Camaro Z28","Pontiac Firebird","Ford Pantera L","Maserati Bora"],"set":"SharedData7498d6d1","name":"8","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData7498d6d1"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-1317fce1429bfde7ae5a" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-1317fce1429bfde7ae5a">{"x":{"visdat":{"79cc3d0a1dab":["function () ","plotlyVisDat"]},"cur_data":"79cc3d0a1dab","attrs":{"79cc3d0a1dab":{"x":{},"y":{},"mode":"markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Peso"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Millas por galón"},"dragmode":"zoom","hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2.3199999999999998,3.1899999999999999,3.1499999999999999,2.2000000000000002,1.615,1.835,2.4649999999999999,1.9350000000000001,2.1400000000000001,1.5129999999999999,2.7799999999999998],"y":[22.800000000000001,24.399999999999999,22.800000000000001,32.399999999999999,30.399999999999999,33.899999999999999,21.5,27.300000000000001,26,30.399999999999999,21.399999999999999],"mode":"markers","type":"scatter","key":["Datsun 710","Merc 240D","Merc 230","Fiat 128","Honda Civic","Toyota Corolla","Toyota Corona","Fiat X1-9","Porsche 914-2","Lotus Europa","Volvo 142E"],"set":"SharedData6fdc1e73","name":"4","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[2.6200000000000001,2.875,3.2149999999999999,3.46,3.4399999999999999,3.4399999999999999,2.77],"y":[21,21,21.399999999999999,18.100000000000001,19.199999999999999,17.800000000000001,19.699999999999999],"mode":"markers","type":"scatter","key":["Mazda RX4","Mazda RX4 Wag","Hornet 4 Drive","Valiant","Merc 280","Merc 280C","Ferrari Dino"],"set":"SharedData6fdc1e73","name":"6","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[3.4399999999999999,3.5699999999999998,4.0700000000000003,3.73,3.7799999999999998,5.25,5.4240000000000004,5.3449999999999998,3.52,3.4350000000000001,3.8399999999999999,3.8450000000000002,3.1699999999999999,3.5699999999999998],"y":[18.699999999999999,14.300000000000001,16.399999999999999,17.300000000000001,15.199999999999999,10.4,10.4,14.699999999999999,15.5,15.199999999999999,13.300000000000001,19.199999999999999,15.800000000000001,15],"mode":"markers","type":"scatter","key":["Hornet Sportabout","Duster 360","Merc 450SE","Merc 450SL","Merc 450SLC","Cadillac Fleetwood","Lincoln Continental","Chrysler Imperial","Dodge Challenger","AMC Javelin","Camaro Z28","Pontiac Firebird","Ford Pantera L","Maserati Bora"],"set":"SharedData6fdc1e73","name":"8","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData6fdc1e73"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="col-xs-4">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-f6e021d82aaec62854f2" style="width:100%;height:400px;"></div>
-<script type="application/json" data-for="htmlwidget-f6e021d82aaec62854f2">{"x":{"visdat":{"15a339b4b2f5":["function () ","plotlyVisDat"]},"cur_data":"15a339b4b2f5","attrs":{"15a339b4b2f5":{"x":{},"y":{},"mode":"markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Caballos"},"yaxis":{"domain":[0,1],"automargin":true,"title":"1/4 milla"},"dragmode":"zoom","hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[93,62,95,66,52,65,97,66,91,113,109],"y":[18.609999999999999,20,22.899999999999999,19.469999999999999,18.52,19.899999999999999,20.010000000000002,18.899999999999999,16.699999999999999,16.899999999999999,18.600000000000001],"mode":"markers","type":"scatter","key":["Datsun 710","Merc 240D","Merc 230","Fiat 128","Honda Civic","Toyota Corolla","Toyota Corona","Fiat X1-9","Porsche 914-2","Lotus Europa","Volvo 142E"],"set":"SharedData7498d6d1","name":"4","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[110,110,110,105,123,123,175],"y":[16.460000000000001,17.02,19.440000000000001,20.219999999999999,18.300000000000001,18.899999999999999,15.5],"mode":"markers","type":"scatter","key":["Mazda RX4","Mazda RX4 Wag","Hornet 4 Drive","Valiant","Merc 280","Merc 280C","Ferrari Dino"],"set":"SharedData7498d6d1","name":"6","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[175,245,180,180,180,205,215,230,150,150,245,175,264,335],"y":[17.02,15.84,17.399999999999999,17.600000000000001,18,17.98,17.82,17.420000000000002,16.870000000000001,17.300000000000001,15.41,17.050000000000001,14.5,14.6],"mode":"markers","type":"scatter","key":["Hornet Sportabout","Duster 360","Merc 450SE","Merc 450SL","Merc 450SLC","Cadillac Fleetwood","Lincoln Continental","Chrysler Imperial","Dodge Challenger","AMC Javelin","Camaro Z28","Pontiac Firebird","Ford Pantera L","Maserati Bora"],"set":"SharedData7498d6d1","name":"8","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData7498d6d1"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-0e1440f9ab1b10149dad" style="width:100%;height:400px;"></div>
+<script type="application/json" data-for="htmlwidget-0e1440f9ab1b10149dad">{"x":{"visdat":{"79cc28ab6731":["function () ","plotlyVisDat"]},"cur_data":"79cc28ab6731","attrs":{"79cc28ab6731":{"x":{},"y":{},"mode":"markers","color":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Caballos"},"yaxis":{"domain":[0,1],"automargin":true,"title":"1/4 milla"},"dragmode":"zoom","hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[93,62,95,66,52,65,97,66,91,113,109],"y":[18.609999999999999,20,22.899999999999999,19.469999999999999,18.52,19.899999999999999,20.010000000000002,18.899999999999999,16.699999999999999,16.899999999999999,18.600000000000001],"mode":"markers","type":"scatter","key":["Datsun 710","Merc 240D","Merc 230","Fiat 128","Honda Civic","Toyota Corolla","Toyota Corona","Fiat X1-9","Porsche 914-2","Lotus Europa","Volvo 142E"],"set":"SharedData6fdc1e73","name":"4","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[110,110,110,105,123,123,175],"y":[16.460000000000001,17.02,19.440000000000001,20.219999999999999,18.300000000000001,18.899999999999999,15.5],"mode":"markers","type":"scatter","key":["Mazda RX4","Mazda RX4 Wag","Hornet 4 Drive","Valiant","Merc 280","Merc 280C","Ferrari Dino"],"set":"SharedData6fdc1e73","name":"6","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null},{"x":[175,245,180,180,180,205,215,230,150,150,245,175,264,335],"y":[17.02,15.84,17.399999999999999,17.600000000000001,18,17.98,17.82,17.420000000000002,16.870000000000001,17.300000000000001,15.41,17.050000000000001,14.5,14.6],"mode":"markers","type":"scatter","key":["Hornet Sportabout","Duster 360","Merc 450SE","Merc 450SL","Merc 450SLC","Cadillac Fleetwood","Lincoln Continental","Chrysler Imperial","Dodge Challenger","AMC Javelin","Camaro Z28","Pontiac Firebird","Ford Pantera L","Maserati Bora"],"set":"SharedData6fdc1e73","name":"8","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"line":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","_isNestedKey":false,"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0,"ctGroups":["SharedData6fdc1e73"]},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1026,8 +1021,9 @@ Betsy Cohen
 </div>
 </div>
 </section>
-<section id="aplicando-esto-a-nuestro-dashboard-de-libros" class="slide level2 smaller">
-<h2>Aplicando esto a nuestro dashboard de libros…</h2>
+<section id="ejerecicio-3-agregando-interactividad-con-crosstalk" class="slide level2 smaller">
+<h2>Ejerecicio 3: agregando interactividad con crosstalk…</h2>
+<div class="tu-turno-box">
 <ul>
 <li><p><strong>Paso 1:</strong> Vamos a cambiar un poco el layout pasando a dos columnas: una la vamos a usar como sidebar para los filtros y otra la vamos a mentener como cuerpo de nuestro</p></li>
 <li><p><strong>Paso 2:</strong> Creamos el objeto compartido <code>shared_libros</code> con <code>ShareData$new</code> de CrossTalk a partir de nuestra tabla de libros</p></li>
@@ -1044,27 +1040,43 @@ Betsy Cohen
 <span id="cb19-4"><a></a><span class="co">#| label: filtro-generos</span></span>
 <span id="cb19-5"><a></a><span class="at">filter_select("filtro_genero", "Género", shared_libros, ~genero, multiple = TRUE)</span></span>
 <span id="cb19-6"><a></a><span class="at">```</span></span>
-<span id="cb19-7"><a></a><span class="at">&lt;br&gt;</span></span>
-<span id="cb19-8"><a></a><span class="at">```{r}</span></span>
-<span id="cb19-9"><a></a><span class="co">#| label: filtro-precio</span></span>
-<span id="cb19-10"><a></a><span class="at">filter_slider("filtro_precio", "Precio (ARS)", shared_libros, ~precio, width = "100%")</span></span>
-<span id="cb19-11"><a></a><span class="at">```</span></span>
-<span id="cb19-12"><a></a><span class="at">&lt;br&gt;</span></span>
-<span id="cb19-13"><a></a><span class="at">```{r}</span></span>
-<span id="cb19-14"><a></a><span class="co">#| label: filtro-ebook</span></span>
-<span id="cb19-15"><a></a><span class="at">filter_checkbox("filtro_ebook", "Disponible en Ebook", shared_libros, ~ebook, inline = TRUE)</span></span>
-<span id="cb19-16"><a></a><span class="at">```</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb19-7"><a></a><span class="at">```{r}</span></span>
+<span id="cb19-8"><a></a><span class="co">#| label: filtro-precio</span></span>
+<span id="cb19-9"><a></a><span class="at">filter_slider("filtro_precio", "Precio (ARS)", shared_libros, ~precio, width = "100%")</span></span>
+<span id="cb19-10"><a></a><span class="at">```</span></span>
+<span id="cb19-11"><a></a><span class="at">```{r}</span></span>
+<span id="cb19-12"><a></a><span class="co">#| label: filtro-ebook</span></span>
+<span id="cb19-13"><a></a><span class="at">filter_checkbox("filtro_ebook", "Disponible en Ebook", shared_libros, ~ebook, inline = TRUE)</span></span>
+<span id="cb19-14"><a></a><span class="at">```</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <ul>
 <li><strong>Paso4:</strong>: En los gráficos vamos a reemplazar la tabla libros por shared_libros</li>
 </ul>
-<p>y entonces…</p>
+</div>
+<countdown-timer id="timer_734a67174f03d72fd7bc331041e7fe01e5129d17" minutes="15" seconds="00" class="countdown" warn-when="0" update-every="1" play-sound="false" blink-colon="false" start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+ </countdown-timer>
 </section>
-<section id="tablero-con-crosstalk" class="slide level2">
-<h2>Tablero con crosstalk</h2>
+<section id="cuando-termines-deberias-tener-algo-así-2" class="slide level2 smaller">
+<h2>Cuando termines deberias tener algo así</h2>
+<iframe src="dashboards/ejemplo4.html" width="100%" height="700" style="border: none;">
+</iframe>
+</section>
+<section id="publicación-y-exportación" class="slide level2">
+<h2>Publicación y exportación:</h2>
+<ul>
+<li><p>Como un html stand alone usando la opción <code>embed-resources: true</code> en tu yaml, ideal si es de circulación interna o lo queres embeber en otro lado tipo iframe</p></li>
+<li><p>Con el comando <code>quarto publish</code> en cualquiera de los <a href="https://quarto.org/docs/dashboards/deployment.html#static-dashboards">servicios disponibles</a> o via integración contínua, pero ojo que después quedan públicos.</p></li>
+</ul>
+<p>En ese caso te recomiendo ver <a href="https://youtu.be/5zYrgRylkH0?si=N5PIJdi5qPxMOmDT">este tutorial</a> de <a href="https://github.com/melissavanbussel">Melissa Van Bussel</a> sobre publicación de dahboards con GitHub Actions</p>
+<ul>
+<li>Quarto Dahboards también permite integrar herramientas de shiny, pero en ese caso ya vas a necesitar deployar en un servidor como shiny server (open source) o posit connect (comercial). Más sobre ese tema <a href="https://quarto.org/docs/dashboards/deployment.html#shiny-dashboards">aquí</a></li>
+</ul>
+</section>
+<section id="preguntas-comentarios" class="slide level2">
+<h2>¿Preguntas/ comentarios?</h2>
 
-<img data-src="images/first-dashboard-excercise-goal_3.gif" class="r-stretch"></section></section>
+<img data-src="images/questions.gif" class="r-stretch"></section></section>
 <section id="muchas-gracias" class="title-slide slide level1 center">
 <h1>¡Muchas gracias!</h1>
 <p><i class="fa-brands fa-linkedin" aria-label="linkedin"></i> <a href="https://www.linkedin.com/in/betsabe1984/">@betsabe1984</a><br>
