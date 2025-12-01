@@ -110,7 +110,6 @@ Todos los tableros tienen una barra de navegación superior o \`nav-bar\` a la q
 ``` {.yaml filename="dashboard-r.qmd"}
 ---
 title: "Mi primer tablero en quarto"
-author: "Rladies BA"
 format:
   dashboard:
     logo: images/rladies-hex.png
@@ -139,7 +138,6 @@ Las filas y columnas se definen, a su vez, mediante encabezados de Markdown y ch
 ````{.yaml filename="dashboard-r.qmd"}
 ---
 title: "Mi primer tablero en quarto"
-author: "Rladies BA"
 format: dashboard
 ---
 
@@ -171,7 +169,6 @@ Podemos agregar varias páginas a nuestro dashboard usando títulos del nivel 1 
 ````{.yaml filename="dashboard-r.qmd"}
 ---
 title: "Mi primer tablero en quarto"
-author: "Rladies BA"
 format: dashboard
 ---
 
@@ -205,7 +202,6 @@ Otra opción muy linda es agregar solapas o tabsets indicando la clase .tabset a
 ````{.yaml filename="dashboard-r.qmd"}
 ---
 title: "Mi primer tablero en quarto"
-author: "Rladies BA"
 format: dashboard
 ---
 
